@@ -1,0 +1,85 @@
+
+
+@font-face {
+    font-family: 'aileronblack_italic';
+    src: url('../fonts/aileron-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('../fonts/aileron-bold-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'aileronitalic';
+    src: url('../fonts/aileron-italic-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronlight';
+    src: url('../fonts/aileron-light-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('../fonts/aileron-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('../fonts/aileron-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronsemibold_italic';
+    src: url('../fonts/aileron-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>-</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">	
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+	.main-body{
+		font-family: 'Varela Round', sans-serif;
+		width: 420px;
+		height: 700px;
+		margin: 0 auto;
+		moz-box-shadow: 0 0 14px #404040;
+		webkit-box-shadow: 0 0 14px #404040;
+		box-shadow: 0 0 14px #404040;   
+		margin-top: 20px;
+	}	
+	
+	.lock{display: block; margin: 0 auto;}
+	
+	h2{text-align:center; margin:100px 0 0 0; font-weight: 600; color: #FFF;}
+	h3{text-align:center; margin: 10px 0; color: #FFF;font-size: 18px; line-height: 1.6;}
+	#ticker{margin:150px 20px 0 20px;}
+	#ticker ul li{text-align:center; margin:0 20px; line-height: 1.6; color: #FFF; font-size: 14px;}
+	
+	
+	.success-tick{display:block; margin:  0 auto;}
+	
+	#success{display:none; margin-top:100px; }
+	
+	
+	
+	    .progress {
+		height: auto;	
+		margin: 0 auto;
+		text-align: center;
+		background: none;
+		box-shadow: none;
+		border-radius: 0;
+		padding: 60px 0;
+		height: 60px;
+		}
+		
+		.progress .circle,
+		.progress .bar {
+		display: inline-block;
+		background: #fff;
+		width: 40px; 
+		height: 40px;
+		border-radius: 40px;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		}
+		.progress .bar {
+		position: relative;
+		width: 100px;
+		height: 6px;
+		top: -2px;
+		margin-left: -5px;
+		margin-right: -5px;
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+		background: #FFF;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		z-index: 0;	
+		}
+		.progress .circle .label {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border-radius: 32px;
+		margin-top: 4px;
+		color: #7A7A7A;
+		font-size: 16px;
+        line-height: 28px;
+		}
+		.progress .circle .title {
+		color: #b5b5ba;
+		font-size: 13px;
+		line-height: 30px;
+		margin-left: -5px;
+		}
+
+		/* Done / Active */
+		.progress .bar.done,
+		.progress .circle.done {
+		background: #01963a;
+		}
+	
+	
+		.progress .bar .inner-bar{
+		  height: 6px;
+		  background-color: #01963a;
+		  display: inline-block;
+		  float: left;	
+		}
+	   
+	 
+		.progress .circle.done .label {
+		color: #FFF;
+		background: #01963a;
+		}
+	
+	    .progress .circle.active{
+			 -webkit-transform: scale(1.3);
+             transform: scale(1.3);
+	    }
+	
+	
+		.progress .circle.active .label {
+		  color: #000;
+		}
+		
+	
+	 i.fa-check{color:#01963a;}
+	
+	
+</style>    
+    
+</head>
+<body>
+
+<div class="main-body" style="background: url(images/bg-overlay.jpg); background-size: cover;">
+    <img src="images/top-bar-white-text.png" class="img-responsive" alt="">
+    
+   <div id="main-content">
+   
+    <h2 id="done-message">Almost done!</h2>
+    <h3>We're processing your request right now.<br> This may take a few moments.</h3>
+    
+      <div class="progress" id="progress">
+      		<div class="circle done">
+				<span class="label">1</span>
+			</div>
+			<span class="bar done"><span class="inner-bar" style="width:0%"></span></span>
+
+			<div class="circle done">
+				<span class="label">2</span>
+			</div>
+			<span class="bar half"><span class="inner-bar" style="width:0%"></span></span>
+
+			<div class="circle">
+				<span class="label">3</span>
+			</div>
+		
+		</div>
+	
+	<div id="ticker">
+		<ul>
+			<li>You are just few steps away for your loan to get credited to your bank account</li>
+			<li>Complete your income verification with Perfios &amp; get instant disbursement</li>
+			<li>Get 100% disbursement by registering for e-Mandate service with your salary Bank Account</li>
+		</ul>
+		
+	</div>
+	
+	
+  </div>	
+  
+ 
+  
+	
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+	   
+		
+		$('#ticker').vTicker({pause: 6000});
+		
+		var i = 1;
+		$('.progress .circle').removeClass().addClass('circle');
+		$('.progress .bar').removeClass().addClass('bar');
+		setInterval(function() {
+		$('.progress .circle:nth-of-type(' + i + ')').addClass('active');
+		$('.progress .circle:nth-of-type(' + (i - 1) + ')').removeClass('active').addClass('done');
+        $('.progress .bar:nth-of-type(' + (i - 1) + ')').addClass('active').children().animate({width: "100px"}, 3000);
+        $('.progress .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done').children().animate({width: "100px"}, 3000);
+
+		i++;
+		
+
+			if (i == 0) 
+			 {
+				$('.progress .bar').removeClass().addClass('bar');
+					$('.progress div.circle').removeClass().addClass('circle');
+					i = 1;
+			 }
+
+			if (i>4){
+				var data = "<i class='fa fa-check'></i>&nbsp; Done !!";
+				$("#done-message").delay(30000).html(data);
+			}	
+			
+			
+		}, 6000);
+		
+		
+		
+		
+		
+					  
+	});
+	
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.vticker.min.js"></script>
+</body>
+</html>

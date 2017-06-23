@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>-</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+	.main-body{
+		font-family: 'Montserrat', sans-serif;
+		width: 420px;
+		height: 720px;
+		margin: 0 auto;
+		moz-box-shadow: 0 0 14px #404040;
+		webkit-box-shadow: 0 0 14px #404040;
+		box-shadow: 0 0 14px #404040;   
+		margin-top: 20px;
+	}	
+	
+	
+	@media screen and (max-width:600px;) {
+			.main-body{
+			width:100%;
+			height: auto;
+			
+	  }	
+	}
+	
+	.lock{display: block; margin: 0 auto;}
+	
+	h2{text-align:center; margin:50px 0 0 0; font-weight: 600;}
+	h3{text-align:center; margin: 10px 0;}
+	h4{text-align:center; margin:30px 0 0 0; line-height: 1.6;}
+	
+	.progress-bar{margin: 0 auto;}
+	
+	.success-tick{display:block; margin:  0 auto;}
+	
+	#success{display:none; margin-top:100px; }
+	
+</style>    
+    
+</head>
+<body>
+
+<div class="main-body">
+    <img src="images/top-bar.gif" class="img-responsive" alt="">
+    
+   <div id="main-content">
+    <h2>Almost done!</h2>
+    <h3>Your data is safe with us</h3>
+    <h4>We're processing your request right now.<br>This may take a few moments.</h4>
+    
+	<img src="images/lock_key.gif" class="lock" width="340" height="397" alt="lock">
+	
+	<img src="images/progress.gif" class="img-responsive" alt="progress-bar" style="margin: 10px auto;">
+	
+  </div>	
+  
+  
+  <div id="success">
+     <img src="images/tick.gif" width="263" height="273" class="success-tick" alt="">
+  	 <h2 style="margin-top: 30px;">Done !!</h2>
+  </div>
+  
+	
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+	   	$("#main-content").delay(10000).fadeOut();
+		$("#success").delay(11000).fadeIn().delay(1300).fadeOut();	
+					  
+	});
+	
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

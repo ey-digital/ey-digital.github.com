@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>-</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+	.main-body{
+		font-family: 'Montserrat', sans-serif;
+		width: 420px;
+		height: 700px;
+		margin: 0 auto;
+		moz-box-shadow: 0 0 14px #404040;
+		webkit-box-shadow: 0 0 14px #404040;
+		box-shadow: 0 0 14px #404040;   
+		margin-top: 20px;
+		position: relative;
+	}	
+	
+	.lock{display: block; margin: 0 auto;}
+	
+	h2{text-align:center; margin:20px 0 0 0; font-weight: 600; color: #FFF;}
+	h3{text-align:center; margin: 10px 0; color: #FFF;font-size: 18px; line-height: 1.6;}
+	h4{margin: 10px 0 10px 30px; color: #FFF;font-size: 18px; line-height: 1.6;}
+	#ticker{margin:0px 15px;}
+	#ticker ul{list-style: none; padding:0;}
+	#ticker ul li{text-align:left; margin:12px 20px; line-height: 1.6; color: #FFF; font-size: 14px; }
+	
+	
+	.success-tick{display:block; margin:  0 auto;}
+	
+	.loading{margin: 80px auto 10px auto; display: block; width: 80px; height: 80px;}
+	.tick{margin: 80px auto 10px auto; display: block; width: 80px; height: 80px;}
+	
+	i.fa-check{color:#01963a;}
+	
+	.other{   
+		margin: 60px 30px 0 30px;
+		padding: 15px 5px;
+		background: rgba(1, 150, 58, 0.70);
+	}
+	
+	hr{ margin: 50px 30px;}
+	
+	
+</style>    
+    
+</head>
+<body>
+
+<div class="main-body" style="background: url(images/bg-overlay.jpg); background-size: cover;">
+    <img src="images/top-bar-white-text.png" class="img-responsive" alt="">
+    
+   <div id="main-content">
+   
+     
+    <img src="images/ring-alt.gif" class="loading" alt="">
+    
+    <h2 id="done-message">Almost done!</h2>
+    <h3 id="processing">We're processing your request right now.<br> This may take a few moments.</h3> 
+	
+	
+	<div id="other_messages" class="other" style="visibility: hidden; opacity: 0;">
+		<div id="ticker">
+			<ul>
+				<li>You are just few steps away from the money to get credited to your account</li>
+				<li>Complete your income verification with the bank in next steps &amp; get instant disbursement</li>
+				<li>Get 100% disbursement by registering for e-Mandate service with your salary Bank Account</li>
+			</ul>
+
+		</div>
+	</div>
+	
+  </div>	
+  
+ 
+  
+	
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+	   $('#ticker').vTicker({pause: 5000});
+		
+	done_loading();
+	show_other_messages();	
+		
+	});
+	
+	function show_other_messages(){
+		
+		  setTimeout(function(){ 
+		    $("#other_messages").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1}, 1200);
+		}, 3000); 
+	}
+	
+	
+	
+	
+	function done_loading(){
+		setTimeout(function(){ 
+		 
+		$(".loading").attr("src","images/tick.png");
+		$("#done-message").text("Done !!");
+		$("#processing").slideUp();	
+		}, 20000);
+		
+	}
+	
+	
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.vticker.min.js"></script>
+</body>
+</html>
