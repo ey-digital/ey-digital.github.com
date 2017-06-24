@@ -110,7 +110,7 @@
 		
 		  setTimeout(function(){ 
 		    $("#other_messages").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1}, 1200);
-		}, 3000); 
+		}, 1000); 
 	}
 	
 	
@@ -118,11 +118,11 @@
 	
 	function done_loading(){
 		setTimeout(function(){ 
-		 
-		$(".loading").attr("src","images/tick.png");
-		$("#done-message").text("Done !!");
-		$("#processing").slideUp();	
-		}, 20000);
+		
+		$("#processing,#other_messages").fadeOut("fast");	
+		$(".loading").delay(1000).attr("src","images/tick.png");
+		$("#done-message").delay(1000).text("Done !!");	
+		}, 15000);
 		
 	}
 	
