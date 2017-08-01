@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>-</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="css/font.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/asPieProgress.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+	.main-body{
+		/*font-family: 'aileronlight', sans-serif;*/
+		font-family: 'Varela Round', sans-serif;
+		width: 480px;
+		height: auto;
+		margin: 0 auto;
+		moz-box-shadow: 0 0 14px #404040;
+		webkit-box-shadow: 0 0 14px #404040;
+		box-shadow: 0 0 14px #404040;   
+		margin-top: 50px;
+		position: relative;
+	}	
+	
+	.lock{display: block; margin: 0 auto;}
+	
+	h2{text-align:center; margin:10px 0 0 0; color: #019d4a;}
+	h3{text-align:center; margin: 10px 0; color: #019d4a; font-size: 18px; line-height: 1.6;}
+	h4{margin: 10px 0 10px 30px; color: #019d4a; font-size: 18px; line-height: 1.6;}
+	#ticker{margin:0px 15px;}
+	#ticker ul{list-style: none; padding:0;}
+	#ticker ul li{text-align:left; margin:12px 20px; line-height: 1.6; color: #FFF; font-size: 14px; }
+	
+	
+	.success-tick{display:block; margin:  0 auto;}
+	
+	.loading{margin: 80px auto 10px auto; display: block; width: 80px; height: 80px;}
+	.tick{margin: 80px auto 10px auto; display: block; width: 80px; height: 80px;}
+	
+	i.fa-check{color:#01963a;}
+	
+	.other{   
+		margin: 80px 30px 0 30px;
+		padding: 15px 5px;
+		background: rgba(1, 150, 58, 0.70);
+	}
+	
+	hr{ margin: 50px 30px;}
+	
+	#myProgress{
+		margin: 30px 60px 60px 60px;
+		background: #FFF;
+	}
+	
+	#myBar {
+    width: 10%;
+    height: 15px;
+	font-size: 11px;
+    background-color: #0f7737;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 16px; /* To center it vertically */
+    color: white; 
+}
+	.mt30{margin-top:30px !important;}
+	
+</style>    
+    
+</head>
+<body>
+
+<div class="main-body">
+    <img src="images/top-bar.png" class="img-responsive" alt="">
+    
+   <div id="main-content">
+   
+
+
+	   <div id="animation" style="margin: 20px 0 0 0; height: 410px">
+	        <div id="animation_1">
+				 <img src="images/finance-icons/dollar.gif" style="width:360px; height: 360px; display: block; margin: 0 auto;" alt="">  
+				 <h2>Need Cash Urgently?</h2>
+			</div>
+			
+			<div id="animation_2" style="display: none;">
+				 <img src="images/finance-icons/briefcase.gif" style="width:360px; height: 360px; display: block; margin: 0 auto;" alt="">  
+				 <h2>Travelling Abroad?</h2>
+			</div>
+			
+			<div id="animation_3" style="display: none;">
+				 <img src="images/finance-icons/wallet.gif" style="width:360px; height: 360px; display: block; margin: 0 auto;" alt="">  
+				 <h2>Getting Married?</h2>
+			</div>
+			
+			<div id="animation_4" style="display: none;">
+				 <img src="images/finance-icons/piggy-bank.gif" style="width:360px; height: 360px; display: block; margin: 0 auto;" alt="">  
+				 <h2>Emergency Loan?</h2>
+			</div>
+			
+	   </div>
+	   
+	   <p style="text-align: center; margin: 20px auto; width: 400px; display: block; font-size: 18px;">Don’t hold yourself back.<br> With Indiabulls Personal Loan you can make your dream come true.</p>
+	   
+	   
+	   <div id="buttons" style="padding: 20px 0">
+	   	  <img src="images/apply-loan-button.png" class="img-responsive" alt="" style="margin: 20px auto; width: 340px; display: block; cursor: pointer;">
+	   	  <img src="images/emi_calculator.png" class="img-responsive" alt="" style="margin: 20px auto; width: 340px; display: block; cursor: pointer;">
+	   	  
+	   </div>
+
+	
+  </div>	
+  
+ 
+  
+	
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+	   animation()
+	});
+	
+	
+	
+	
+	function animation(){
+		 $('#animation_1').fadeIn(200).delay(2500).fadeOut(200, function() {
+				$('#animation_2').fadeIn(200).delay(2500).fadeOut(200, function() {
+					$('#animation_3').fadeIn(200).delay(2500).fadeOut(200, function() {
+					  $('#animation_4').fadeIn(200).delay(2500).fadeOut(200, function() {
+						  animation();
+					   });
+				   });
+					
+				});
+		  });
+	}
+	
+	
+	
+	
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
