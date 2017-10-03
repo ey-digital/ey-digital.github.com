@@ -30,6 +30,7 @@ strong{font-weight:700;}
 .pointer{cursor:pointer;}
 .padTopNone{ padding-top:0 !important;}
 .form-control[readonly]{ background:transparent;}
+textarea.form-control{height: 100px;}
 .noborder{border:none !important;}
 .noborderTop{border-top:none !important;}
 .noborderBottom{border-bottom:none !important;}
@@ -44,6 +45,7 @@ strong{font-weight:700;}
 .mT30{margin-top: 30px;}
 .mTn5{margin-top:-5px;}
 .mR20{margin-right:20px;}
+.mB30{margin-bottom:30px;}
 
 
 /* Paddings */
@@ -74,12 +76,12 @@ top: 0; z-index: 999999;}
 
 /* back to top */
 #back-top {
-  display:none;	
-  position: fixed;
+    display:none;	
+    position: fixed;
     bottom: 10px;
     right: 20px;
     z-index: 100;
-    color: #FFF;
+    color: #333333;
     background: #fee600;
     padding: 8px 11px;
     font-size: 24px;
@@ -100,38 +102,6 @@ top: 0; z-index: 999999;}
 	-o-transition: 0.2s ease-in-out;
 	transition: 0.2s ease-in-out;
 }
-
-
-
-
-/*form resets*/
-/*
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-    border: 1px solid #f1f1f1;
-    padding: 12px 16px;
-    line-height: inherit;
-    width: 100%;
-    background-color: #f7f7f7;
-    margin-bottom: 30px;
-    border-radius: 0;
-    height: auto;
-    -webkit-appearance: none;
-    text-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: border ease .4s;
-    -moz-transition: border ease .4s;
-    transition: border ease .4s;
-}
-
-*/
-
-
-
 
 
 
@@ -175,7 +145,10 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 
 
-
+.btn-lg{
+	padding: 15px 30px;
+	font-size: 18px;
+}
 
 
 
@@ -698,6 +671,7 @@ h2:after, h2.alt-h2:after {
     box-shadow: 0px 0px 30px rgba(69, 101, 173, 0.1);
     border: 2px solid transparent;
 	display: block;
+	overflow: hidden;
 }
 
 
@@ -709,7 +683,6 @@ h2:after, h2.alt-h2:after {
 }
 
 .card img.icon{ width: 80px; height: 80px; display: block; margin: 0 auto;}
-
 
 
 
@@ -772,6 +745,52 @@ h2:after, h2.alt-h2:after {
 }
 
 
+
+.card-2 {
+    background: #FFF;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    box-shadow: 0px 0px 30px rgba(69, 101, 173, 0.1);
+    border: 2px solid transparent;
+	display: block;
+	overflow: hidden;
+}
+
+
+
+
+.card-2:hover {
+    border: 2px solid #fee600;
+    transition: all 0.3s;
+}
+
+
+.card-2 img.pic{ width: 60px; height: 60px; display: block; float: left; margin: 0 15px 15px 0; }
+.card-2 .description{
+	float: left;
+	width: 75%;
+	display: block;
+	color: inherit;
+}
+.card-2 h4.title{
+	text-align: left;
+	text-transform: none;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #252525;
+	line-height: 1.4;
+	min-height: 0;
+}
+
+.card-2 li{font-size: 12px; line-height: 1.4; border-bottom:1px solid #ccc; margin: 0 0 5px 0; padding: 0 0 5px 0;}
+.card-2 li:first-child{}
+.card-2 li:last-child{border-bottom: none; margin: 0; padding: 0;}
+
+
+
+
 .element{
 	padding: 20px 30px;
 	border-bottom: 1px solid #cccccc;
@@ -810,6 +829,54 @@ h2:after, h2.alt-h2:after {
 	line-height: 1.4;
 	min-height: 45px;
 }
+
+
+
+.element_1{
+	padding: 20px 30px;
+	border-bottom: 1px solid #cccccc;
+	display: block;
+	overflow: hidden;
+	transition: all 0.3s ease-in;
+}
+
+.element_1 img{
+	width:100px;
+	height: 100px;
+	display: block;
+	margin: 20px auto;
+	border:2px solid #fee600;
+	padding: 10px;
+	transition: all 0.3s ease-in;
+}
+
+.element_1:hover{
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.element_1:hover img{
+	border-radius: 80px;
+	background: #f7f7f7;
+}
+
+
+.element_1 h4{
+	margin: 20px 0;
+	font-size: 16px;
+	color:#787878;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.4;
+}
+
+
+
+
+
+
+
+
 
 .bdr-rt{border-right:1px solid #cccccc;}
 .bdr-btm-none{border-bottom:none;}
@@ -1147,4 +1214,13 @@ label > span{color:red;}
     bottom: -4px;
     left: 0px;
 }
+
+
+.mid-widget-1{background: url(../images/extras/bg-dark.jpg) repeat scroll 0 0; padding: 60px 0;}
+.mid-widget-1 h3{color:#FFF; margin: 15px 0 20px 0; font-size: 26px;}
+
+
+
+
+
 

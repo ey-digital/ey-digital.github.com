@@ -67,7 +67,7 @@ $(function(){
 	
 	
 	dropdownHover();
-
+    backTop();
 	
 	/* Ligthbox plugins*/
 	
