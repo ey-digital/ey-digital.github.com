@@ -1020,6 +1020,17 @@ h2:after, h2.alt-h2:after {
 .card-alt img.icon{ width: 80px; height: 80px; display: block; margin: 0 auto;}
 
 
+.card-alt h3 {
+    text-align: left;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #252525;
+	line-height: 1.4;
+}
+
+
+
 .card-alt h4 {
     text-align: center;
     font-weight: 600;
@@ -1218,6 +1229,19 @@ label > span{color:red;}
 
 .mid-widget-1{background: url(../images/extras/bg-dark.jpg) repeat scroll 0 0; padding: 60px 0;}
 .mid-widget-1 h3{color:#FFF; margin: 15px 0 20px 0; font-size: 26px;}
+
+
+
+
+
+
+/********************* Results table *********************/
+.results-table th{background:#e9e9e9; padding: 15px!important; }
+
+.results-table>tbody>tr>td, .results-table>tbody>tr>th, .results-table>tfoot>tr>td, .results-table>tfoot>tr>th, .results-table>thead>tr>td, .results-table>thead>tr>th {
+    border: 1px solid #bebebe;
+}
+
 
 
 
