@@ -1214,8 +1214,8 @@ label > span{color:red;}
 
 /************* Section style  ***********/
 .mid-widget{background-color: #f9f9f9!important; padding: 30px 0;}
-.mid-widget h4{border-bottom: 1px solid rgba(0, 0, 0, 0.1);    padding-bottom: 20px; margin:10px 0 30px 0; position: relative; z-index: 1; color: #000000;}
-.mid-widget h4:after{content: "";
+.mid-widget h4, h4.table-header{border-bottom: 1px solid rgba(0, 0, 0, 0.1);    padding-bottom: 20px; margin:10px 0 30px 0; position: relative; z-index: 1; color: #000000;}
+.mid-widget h4:after ,h4.table-header:after{content: "";
     background-color: #ffe601;
     width: 80px;
     height: 8px;
@@ -1241,6 +1241,25 @@ label > span{color:red;}
 .results-table>tbody>tr>td, .results-table>tbody>tr>th, .results-table>tfoot>tr>td, .results-table>tfoot>tr>th, .results-table>thead>tr>td, .results-table>thead>tr>th {
     border: 1px solid #bebebe;
 }
+
+
+
+.search-widget{text-align:right;}
+.search-widget a{ color: #333; font-size: 20px;}
+
+
+
+
+
+/************ Courses and Certifications ***********/
+
+.course-card{background: #f5f5f5; display: block; margin: 0 0 30px 0; color: #333333;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);transition: all 0.2s ease 0s;}
+.course-card:hover{color:#333333; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);}
+.course-card img{margin: 0 0 10px 0; display: block;}
+.course-card .description{padding:10px 20px;}
+.course-card h4{font-size: 16px; font-weight: 600; margin: 0 0 10px 0}
+.course-card p{font-size: 12px; line-height: 1.4;}
+
 
 
 
