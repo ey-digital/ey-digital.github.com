@@ -449,7 +449,6 @@ top: 0; z-index: 999999;}
     background-repeat: no-repeat!important;
     background-size: cover!important;
     background-position: right top!important;
-    background-color: #f4f4f4!important;
     height: 100vh;
 }
 
@@ -519,6 +518,18 @@ h2:after, h2.alt-h2:after {
     transition: all .5s ease .1s
 }
 
+.loop.type-portfolio .animated .visible_title {
+    position: absolute;
+    width: 100%;
+    background: rgba(240,240,240,1);
+    color: #111;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    transition: all .5s ease .1s
+}
+
+
 .loop.type-portfolio .visible_title p{margin: 0;}
 
 .loop.type-portfolio .visible_title .title {
@@ -542,6 +553,7 @@ h2:after, h2.alt-h2:after {
     overflow: hidden;
     position: relative;
 	min-height: 380px;
+	background: #f9f9f9;
 }
 
 .loop.type-portfolio .title {
