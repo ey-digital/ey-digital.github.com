@@ -476,7 +476,7 @@ h2.alt-h2 {
 
 h2:after, h2.alt-h2:after {
     content: "";
-    background-color: #ffe601;
+    background-color: #fee600;
     width: 160px;
     height: 8px;
     border-radius: 8px;
@@ -605,13 +605,14 @@ h2:after, h2.alt-h2:after {
 }
 
 .loop.type-portfolio.hover-1 .overlay .title,.loop.type-portfolio.hover-1 .overlay a,.loop.type-portfolio.hover-1 .overlay a:hover {
-    color: #111
+    color: #111;
 }
 
 .loop.type-portfolio.hover-1 .overlay .text {
     width: 100%;
     bottom: 20px;
-    left: 20px
+    left: 20px;
+	color: #111;
 }
 
 
@@ -904,7 +905,7 @@ h2:after, h2.alt-h2:after {
 
 .right-sidebar h4:after {
     content: "";
-    background-color: #ffe601;
+    background-color: #fee600;
     width: 60px;
     height: 6px;
     border-radius: 8px;
@@ -1228,7 +1229,7 @@ label > span{color:red;}
 .mid-widget{background-color: #f9f9f9!important; padding: 30px 0;}
 .mid-widget h4, h4.table-header{border-bottom: 1px solid rgba(0, 0, 0, 0.1);    padding-bottom: 20px; margin:10px 0 30px 0; position: relative; z-index: 1; color: #000000;}
 .mid-widget h4:after ,h4.table-header:after{content: "";
-    background-color: #ffe601;
+    background-color: #fee600;
     width: 80px;
     height: 8px;
     border-radius: 8px;
