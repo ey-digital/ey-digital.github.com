@@ -72,9 +72,9 @@ $(function(){
 	/* Ligthbox plugins*/
 	
 	if ( $().fancybox ) {
-	    $(".fancybox").fancybox({
-			padding : 0
-		});
+	    $('[data-fancybox]').fancybox({
+	          protect: true
+		 });
 	}
 	
 	

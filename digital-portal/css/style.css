@@ -15,11 +15,14 @@ ul, ol {
 }
 
 p{line-height:24px;}
+*:focus {
+    outline: none;
+}
 
 
 /* General Classess and Utilities*/
 .clearBoth{ clear:both;}
-a, a:hover, a:focus, a:active{color: #fee600; text-decoration: none;; outline: none;}
+a, a:hover, a:focus, a:active{color: #fee600; text-decoration: none; outline: none;}
 .btn:focus, .btn.focus{background: none; outline: 0; }
 strong{font-weight:700;}
 .text-small{font-size:12px;}
@@ -1375,6 +1378,7 @@ label > span{color:red;}
   position: relative;
   cursor: pointer;
   margin: 15px 0;
+  display: block;
 }
 
 .video-thumbnail img{
