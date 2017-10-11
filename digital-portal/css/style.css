@@ -42,6 +42,7 @@ textarea.form-control{height: 100px;}
 /* Margins */
 .m5{ margin:5px;}
 .mT5{margin-top:5px;}
+.mT15{margin-top: 15px;}
 .mT30{margin-top: 30px;}
 .mTn5{margin-top:-5px;}
 .mR20{margin-right:20px;}
@@ -916,7 +917,7 @@ h2:after, h2.alt-h2:after {
 }
 
 /********************  User Profile listing ***************************/
-.profiles-listing{list-style-type: none; overflow: hidden;}
+.profiles-listing{list-style-type: none;}
 .profiles-listing li{overflow: hidden; background: #FFFFFF; padding: 10px; border: 1px solid #e7e7e7; border-radius: 6px; margin: 0 0 20px 0; }
 .profiles-listing.horizontal li{float: left; margin: 0 20px 20px 0; min-width: 320px; box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.4);}
 .profiles-listing img{width: 80px; height: 80px; border:4px solid #cecece; border-radius: 50%; float: left; margin:  0 15px 0 0; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);}
@@ -1162,16 +1163,61 @@ label > span{color:red;}
 .graph-ui table{font-size:12px;}
 .graph-ui table tr th{background-color: #f9f9f9;}
 
+
+
+
+/************************** Widgets UI *******************************/
+.widgets-ui{margin:0 0 30px 0;}
+.mini-card-1{border: 1px solid #ddd; border-top: 3px solid #fee600; padding: 0 15px 15px; overflow: hidden; border-radius: 4px; background: #FFF; margin: 0 0 30px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); min-height: 205px; transition: all 0.3s ease-in;}
+.mini-card-1:hover{box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);}
+.mini-card-1 h4{font-size: 16px; text-align: left; color: #333333; font-weight: 600; margin: 15px 0 10px 0; border-bottom: 1px solid #ddd; padding: 0 0 10px 0;}
+.mini-card-1 .icon{float: left; margin: 10px 15px 0 0; border: 2px solid #fee600; border-radius: 85px; width: 85px; height: 85px; background: #FFF;}
+.mini-card-1 .icon img {width: 55px; height: 55px; display: block;  margin: 12px auto; padding: 4px; }
+.mini-card-1 .description{float: left; width: 65%;}
+.mini-card-1 .description h3{text-align: center; margin: 5px 0 15px 0; color:#333333; font-size: 36px; font-weight: 300;}
+.mini-card-1 .description span{font-size: 20px;}
+
+.mini-card-2{border: 1px solid #ddd; border-top: 3px solid #fee600; padding: 15px; overflow: hidden; border-radius: 4px; background: #FFF; margin: 0 0 30px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); min-height: 155px; transition: all 0.3s ease-in;}
+.mini-card-2:hover{box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);}
+.mini-card-2 .icon{margin: 10px 15px 15px 0; border: 2px solid #fee600; border-radius: 85px; width: 85px; height: 85px; background: #FFF;}
+.mini-card-2 .icon img {width: 55px; height: 55px; display: block;  margin: 12px auto; padding: 4px; }
+.mini-card-2 .info-block h3{text-align: left; margin: 5px 0 0 0; color:#333333; font-size: 36px; font-weight: 300;}
+.mini-card-2 .info-block span{font-size: 20px;}
+.mini-card-2 .subtext{margin: 0 0 10px 0;}
+.mini-card-2 p{font-size:12px; line-height: 1.4;}
+
+
+.mini-card-3{border: 1px solid #ddd; border-top: 3px solid #fee600; padding: 15px; overflow: hidden; border-radius: 4px; background: #FFF; margin: 0 0 30px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); min-height: 155px; transition: all 0.3s ease-in;}
+.mini-card-3:hover{box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);}
+.mini-card-3 .icon{float: left; margin: 10px 10px 0 0; border: 2px solid #fee600; border-radius: 85px; width: 75px; height: 75px; background: #FFF;}
+.mini-card-3 .icon img {width: 50px; height: 50px; display: block;  margin: 12px auto; padding: 4px; }
+.mini-card-3 .info-block{float:left; width: 60%; text-align: center;}
+.mini-card-3 .info-block h3{text-align: center; margin: 5px 0 0 0; color:#333333; font-size: 36px; font-weight: 300;}
+.mini-card-3 .info-block span{font-size: 20px;}
+.mini-card-3 .subtext{margin: 0 0 10px 0;}
+.mini-card-3 i.up{margin:0 5px 0 0;color: #2ecc71; font-size: 16px;}
+.mini-card-3 i.down{margin:0 5px 0 0;color: #e74c3c; font-size: 16px;}
+.mini-card-3 p{font-size:12px; line-height: 1.4;}
+
+
+
+
+
 .metric-table th{vertical-align: middle!important; text-align: center; font-size: 16px; font-weight: 600;}
 .metric-table>tbody>tr>td, .metric-table>tbody>tr>th, .metric-table>tfoot>tr>td, .metric-table>tfoot>tr>th, .metric-table>thead>tr>td, .metric-table>thead>tr>th{border: 1px solid #bebebe;}
 .metric-table .sp-metric{background: #fff066; color:#333333;}
 .metric-table .sub-metric{background: #d9d9d9; text-align: center; color:#333333;}
 
+.mini-table{font-size: 12px; border:1px solid #ddd; width: 100%;}
+.mini-table td{padding:5px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align:center;  vertical-align: middle;}
+.mini-table td.key{background: #eeeeee; font-weight: 600;}
+.mini-table td.value{font-weight: 600; font-size: 16px; color: #333333;}
 
 
 
-
-
+.table-minimal{border: 1px solid #ddd; width: 100%; margin: 0 0 30px 0;}
+.table-minimal th{background: #ddd; padding: 10px 20px; color: #333333; font-weight: 600; border:none; font-size: 16px;}
+.table-minimal td{padding: 10px 20px ;border-top: 1px solid #ddd} 
 
 
 
@@ -1280,6 +1326,83 @@ label > span{color:red;}
 
 
 
+/******************************* India asset library pages ****************************/
+.asset-intro{margin-bottom:30px; }
+.asset-logo{margin: 5px auto 30px; border: 2px solid #fee600; border-radius: 100px; width: 100px; height: 100px;}
+.asset-logo img{width: 70px; height: 70px; display: block; margin: 12px auto; padding: 4px;}
+.asset-info{margin: 0 0 20px 0;}
+.asset-info h3{margin: 0 0 5px 0;}
 
+
+.panel-primary {
+    border-color: #ddd;
+}
+
+.panel-primary>.panel-heading {
+    color: #333;
+    background-color: #f8f8f8;
+    border-color: #ddd;
+	font-weight: 600;
+}
+
+
+
+
+
+.icon-list li span {
+    position: relative;
+    padding-left: 20px;
+    color: #777;
+	transition:all 0.4s;
+}
+
+.icon-list li span:before {
+    content: "\f04b";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #626262;
+    font-size: 10px;
+    line-height: normal;
+}
+
+
+
+
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.video-thumbnail img{
+	display: block;
+	margin: 0 auto;
+}
+
+.video-thumbnail:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  content: "\f01d";
+  font-family: FontAwesome;
+  font-size: 100px;
+  color: #fff;
+  opacity: .8;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.video-thumbnail:hover:before {
+  color: #eee;
+}
+
+
+.modal-title {
+    color: #333;
+    font-weight: 600;
+}
 
 
