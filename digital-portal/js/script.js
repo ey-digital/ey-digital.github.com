@@ -140,7 +140,6 @@ $(document).on('change', '.file', function(){
 	$('button[href="#search"]').on('click', function(event) {
         event.preventDefault();
         $('#search').addClass('open');
-        $('#search > form > input[type="search"]').focus();
     });
     
     $('#search, #search button.close').on('click keyup', function(event) {
