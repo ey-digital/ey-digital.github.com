@@ -158,97 +158,6 @@ top: 0; z-index: 999999;}
 
 
 
-
-
-/*search  form */
-.search-form{
-	background: #f2f2f2;
-    color: #fff;
-    margin: 0;
-	display:none;
-    overflow: hidden;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-	box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
-	z-index:1;
-}
-
-
-
- .search-form i.fa-search{
-    color: #777;
-    font-size: 14px;
-    display: inline-block;
-    padding: 0px 0px 0px 45px;
-    float: left;
-    line-height: 50px;
-	height: 20px !important;
-    width: 20px !important;
-    position: absolute;
-    left: 0;
-}
-
-.search-form input, .search-form input:focus {
-    background-color: #f2f2f2;
-    border: none;
-    box-shadow: none;
-    color: #777;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 24px;
-    height: 20px;
-    margin: 15px;
-    width: 90%;
-    padding: 0px 45px 0px 60px;
-    font-family: inherit;
-    outline: none;
-    outline-offset: 0px;
-    -webkit-appearance: none;
-    border-radius: 0;
-    float: left;
-}
-
-
-.search-form input[type="submit"] {
-    border: 0 none;
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    visibility: hidden;
-}
-
-
-.search-form .search-close{
-	color: #777;
-    font-size: 20px;
-    position: absolute;
-    line-height: 50px;
-    height: 50px;
-    top: 0px;
-    right: 45px;
-	background:none;
-	border:none;
-    outline: none;
-}
-
-
-@media screen and (max-width:600px) {
-	.search-form input, .search-form input:focus {padding: 0px 10px 0 30px;}
-	.search-form i.fa-search{left:-30px;}
-	.search-form .search-close{right: 10px;}
-}
-
-
-
-
-
-
 /*navbar styles*/
  h1.logo{margin:0; text-indent:-9999px;}
  h1 .logo-icon{width:120px; height:60px;}
@@ -296,7 +205,7 @@ top: 0; z-index: 999999;}
     border-radius: 0px;
 }
 
-.navbar-toggle{margin-top: 10px;}
+.navbar-toggle{margin-top: 18px;}
 
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -425,15 +334,15 @@ top: 0; z-index: 999999;}
 .search-button{
   background:none;
   border:none;
-  padding: 20px;
+  padding: 25px;
   outline: none;
-  font-size: 18px; 	
+  font-size: 14px; 	
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1024px) {
 	.search-button{
-	  padding: 5px 15px;
+	  padding: 5px 25px;
 	}
 }
 
@@ -772,6 +681,7 @@ h2:after, h2.alt-h2:after {
     border: 2px solid transparent;
 	display: block;
 	overflow: hidden;
+	min-height: 180px;
 }
 
 
@@ -1338,13 +1248,14 @@ label > span{color:red;}
 
 
 .panel-primary {
-    border-color: #ddd;
+    border-color: #bebebe;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .panel-primary>.panel-heading {
     color: #333;
-    background-color: #f8f8f8;
-    border-color: #ddd;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
 	font-weight: 600;
 }
 
@@ -1352,14 +1263,19 @@ label > span{color:red;}
 
 
 
-.icon-list li span {
+.icon-list li span, .icon-list li a {
     position: relative;
     padding-left: 20px;
     color: #777;
 	transition:all 0.4s;
 }
 
-.icon-list li span:before {
+
+.icon-list li a:hover {
+   text-decoration: underline;
+}
+
+.icon-list li span:before, .icon-list li a:before {
     content: "\f04b";
     font-family: "FontAwesome";
     position: absolute;
@@ -1369,6 +1285,42 @@ label > span{color:red;}
     font-size: 10px;
     line-height: normal;
 }
+
+
+
+
+
+
+.icon-list-contact li{float: left; width: 50%;}
+
+.icon-list-contact li:nth-child(even) {float: right; width: 50%;}
+
+.icon-list-contact li div {
+    position: relative;
+    padding-left: 40px;
+    color: #777;
+	margin: 0 0 20px 0;
+	transition:all 0.4s;
+	line-height: 1.6;
+}
+
+.icon-list-contact li div:before {
+    content: "\f2bc";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #626262;
+    font-size: 22px;
+    line-height: normal;
+}
+
+.icon-list-contact li .name{display: block; color: #000000; font-weight: 600;}
+.icon-list-contact li .designation{display: block; font-size: 12px; color: #8b8b8b;}
+.icon-list-contact li .mail{display: block; color: #337ab7; font-size: 12px;}
+.icon-list-contact li .phone{display: block; color: #8b8b8b; font-size: 12px;}
+
+
 
 
 
@@ -1390,8 +1342,8 @@ label > span{color:red;}
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   content: "\f01d";
   font-family: FontAwesome;
   font-size: 100px;
@@ -1408,5 +1360,98 @@ label > span{color:red;}
     color: #333;
     font-weight: 600;
 }
+
+
+
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    opacity: 0;
+	z-index: 4;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+
+@media screen and (max-width:1024px) {
+	#search input[type="search"] {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 10px 17px;
+	font-size: 40px;
+}
+
+
+
+
+
+.contact-table{}
+.contact-table th{font-size: 12px; font-weight: 600; background: #f8f8f8; border-top: none!important;} 
+.contact-table td{font-size: 12px;}
+
+
+
+
+
+
+
+
+
 
 

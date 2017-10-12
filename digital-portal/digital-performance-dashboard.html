@@ -88,18 +88,13 @@
             </li>
            
          
-            <li><button href="javascript:void(0)" id="search-button" class="search-button">
+            <li><button href="#search" id="search-button" class="search-button">
                 <span class="visible-xs">SEARCH&nbsp;&nbsp;<i class="fa fa-search"></i></span>
                 <i class="fa fa-search hidden-xs"></i> </button>
             </li>
           </ul>
            
-           <form role="search" id="search-form" class="search-form" method="get">
-                 <i class="fa fa-search"></i>
-                <input type="text" placeholder="Type your search term and hit enter" name="search" class="search-field" autocomplete="off" value="" />
-                <input type="submit" value="Search" />
-                 <button type="reset" href="javascript:void(0)" class="search-close"> <i class="fa fa-times"></i></button>
-           </form>
+         
           
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -582,7 +577,15 @@
   
   
   
-  
+<!-- Search form overlay -->   
+ <div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="Type your search term(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div> 
+      
   
   
   
