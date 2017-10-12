@@ -82,7 +82,7 @@ $(function(){
 	    $("#champions").slick({
 		  infinite: false,
 		  slidesToShow: 3,
-		  slidesToScroll: 3,
+		  slidesToScroll: 2,
 		  responsive: [
 				{
 				  breakpoint: 1024,
