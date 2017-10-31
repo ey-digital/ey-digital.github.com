@@ -1462,7 +1462,53 @@ label > span{color:red;}
 
 
 
+.chatbox-trigger{
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    color: #FFF;
+    background: #427fe1;
+    padding: 8px 15px;
+    font-size: 30px;
+    border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
 
 
+.chatbox-trigger:hover{color: #FFF;}
+
+
+
+.chatbox{
+	position: fixed;
+    bottom: -5px;
+    right: -5px;
+    z-index: 100;
+	display: none;
+}
+
+.chatbox-inner{
+	position: relative;
+}
+
+.close-box{
+	position: absolute;
+    top: -20px;
+    right: 4px;
+    font-size: 20px;
+    border: 2px solid #2b303e;
+    padding: 6px 12px;
+    border-radius: 50%;
+    background: #FFF;
+    color: #000;
+}
+
+.close-box:hover{
+	background: #f1f1f1;
+	color: #000;
+}
 
 
