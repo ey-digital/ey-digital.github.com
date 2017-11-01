@@ -1484,11 +1484,17 @@ label > span{color:red;}
 
 .chatbox{
 	position: fixed;
-    bottom: -5px;
-    right: -5px;
+    bottom: 4px;
+    right: 10px;
     z-index: 100;
 	display: none;
 }
+
+
+.chatbox iframe{
+	border: none; box-shadow: 0px 4px 16px 4px rgba(0,0,0,0.5); border-radius: 6px;
+}
+
 
 .chatbox-inner{
 	position: relative;
@@ -1497,7 +1503,7 @@ label > span{color:red;}
 .close-box{
 	position: absolute;
     top: -20px;
-    right: 4px;
+    right: -10px;
     font-size: 20px;
     border: 2px solid #2b303e;
     padding: 6px 12px;
