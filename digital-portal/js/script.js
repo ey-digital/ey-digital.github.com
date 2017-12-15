@@ -163,6 +163,9 @@ $(document).on('change', '.file', function(){
 	})	
 	
 	
+
+	
+
 	
 	
 // end bracket for document ready function 
